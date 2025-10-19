@@ -1,0 +1,25 @@
+{
+  "horizon_weeks": 3,
+  "forecast": {
+    "inflow_total": 97.0,
+    "outflow_total": 77.0,
+    "severity_breakdown_inflow": {
+      "critical": 0.0,
+      "high": 0.3,
+      "medium": 96.7,
+      "low": 0.0
+    }
+  },
+  "resource_plan": {
+    "predicted_inflow": 97.0,
+    "estimated_total_hours": 388.6,
+    "recommended_engineers": 13,
+    "recommended_qa_hours": 116.6,
+    "hours_per_defect": {
+      "critical": 10,
+      "high": 6,
+      "medium": 4,
+      "low": 2
+    }
+  }
+}

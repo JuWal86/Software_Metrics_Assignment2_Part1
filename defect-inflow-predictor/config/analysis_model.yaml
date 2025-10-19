@@ -1,0 +1,29 @@
+forecast:
+  method: ewma           # default short-term method
+  ewma_alpha: 0.45
+  fallback: linreg       # method for long horizons
+  horizon_switch: 3      # switch to fallback when horizon > 3
+  horizon_weeks: 1       # default horizon if not given
+
+
+severity_weights:
+  critical: 3.0
+  high: 2.0
+  medium: 1.0
+  low: 0.5
+
+health_thresholds:
+  healthy_max_per_deployment: 10
+  inflow_gt_outflow_consecutive_weeks: 2
+  backlog_healthy_max: 15
+  critical_severe_window: 1
+  critical_severe_min: 5
+
+resources:
+  hours_per_defect:
+    critical: 10
+    high: 6
+    medium: 4
+    low: 2
+  engineer_capacity_hours_per_week: 30
+  qa_share: 0.3
