@@ -90,7 +90,7 @@ export GITHUB_TOKEN=YOUR_TOKEN
 python src/fetch_github.py --repo owner/name --since 2024-01-01 --until 2025-12-31 --out data/base_measures.csv
 python src/cli.py --data data/base_measures.csv --config config/analysis_model.yaml --horizon 1 (horizon can be changed based on how far ehead the prediction needs to be)
 
-For manual input, just modify the data/base_measures.csv file and then run src/cli.py
+For manual input, just modify the data/base_measures.csv file and then run src/cli.py```
 
 Columns (Base Measures)
 
