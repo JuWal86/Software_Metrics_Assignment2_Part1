@@ -57,23 +57,16 @@ Applied to the *Microsoft PowerToys* repository, the system produced the followi
 | **Recommended engineers** | 13 |
 | **QA effort** | 116.4 h |
 
-Persistent inflow greater than outflow was observed, which aligns with Shola’s interpretation:
-> “If the amount of defect inflow is higher, then it’s a problem, definitely.”
 
-This situation may arise due to:
-- Introduction of new features without adequate testing  
-- Insufficient QA or test automation coverage  
-- Increased system complexity leading to regressions  
-- Recent large-scale refactoring or dependency updates  
-- Lack of prioritization or delayed bug triage  
+ 
 
 ---
 
 ## Methodology
 
 1. **Data Generation / Collection**
-   - Uses mock data simulating weekly inflow/outflow counts.
-   - Can be extended to fetch real GitHub issue statistics.
+   - Uses manual data from weekly inflow/outflow counts.
+   - Fetches real GitHub issue statistics.
 
 2. **Computation**
    - Detects when `inflow > outflow` for consecutive weeks.
