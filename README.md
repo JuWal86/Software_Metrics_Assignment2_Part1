@@ -84,17 +84,16 @@ Applied to the *Microsoft PowerToys* repository, the system produced the followi
 
 pip install -r requirements.txt
 
-For GitHub fetching, run:
-
-python3 src/fetch_github.py \
-  --repo microsoft/PowerToys \
-  --since 2024-01-01 \
-  --until 2025-10-13 \
-  --out data/base_measures.csv
-  
-Then:
-
-python3 src/cli.py --data data/base_measures.csv --config config/analysis_model.yaml --horizon 10 (horizon can be changed based on how far ehead the prediction needs to be)
+# Use with an open-source repo
+```bash
+export GITHUB_TOKEN=YOUR_TOKEN
+python src/fetch_github.py --repo owner/name --since 2024-01-01 --until 2025-12-31 --out data/base_measures.csv
+python src/cli.py --data data/base_measures.csv --config config/analysis_model.yaml --horizon 1 (horizon can be changed based on how far ehead the prediction needs to be)
 
 For manual input, just modify the data/base_measures.csv file and then run src/cli.py
+
+
+# Columns (Base Measures)
+week_start, defects_inflow_total, defects_outflow_total, severity_critical_in, severity_high_in, severity_medium_in, severity_low_in, avg_resolution_time_hours, backlog_total
+Then:
 
