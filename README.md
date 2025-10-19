@@ -81,7 +81,7 @@ Applied to the *Microsoft PowerToys* repository, the system produced the followi
 ---
 
 ## Run the project
-
+```bash
 pip install -r requirements.txt
 
 ### Use with an open-source repo
